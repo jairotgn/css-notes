@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning flexbx and css</title>
+    <style>
+        h1 {
+            text-align: center;;
+            margin:20px
+        }
+        h2 {
+            text-align: center;;
+            margin:40px 0 20px 0
+        }
+        section{
+            border: 1px solid #000;
+            padding: 20px;
+            background-color:beige;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content:center; 
+        }
+        section>div {
+            margin: 20px;
+        }
+        .flex-container {
+            width: 600px;
+            display:flex;
+            border: 1px solid #727272;
+            padding:10px;
+            background-color: rgb(210, 210, 210);
+            margin-bottom:30px;
+            max-width:400px;
+            height:300px
+        }
+       
+        .flex-container > div{
+            border: 1px solid #000;
+            background-color:  #fff;
+            text-align:center;
+            font-weight:bold;
+            line-height: 75px;
+            width:75px;
+            text-align:center;
+            margin:5px;
+        
+        }
+    
+    </style>
+  </head>
+  <body>
+    <h1>Learning flexbox by Jairo</h1>  
+    <h2>Flex-direction</h2> 
+    <section>
+        <div>
+            <h3>Flex-direction: row (default)</h3>  
+            <div class="flex-container">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+            </div>
+        </div>
+        <div>
+            <h3>Flex-direction: row-reverse </h3>  
+            <div class="flex-container" style="flex-direction:row-reverse   ">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+            </div>
+        </div>
+        <div>
+            <h3>Flex-direction: column </h3>  
+            <div class="flex-container" style="flex-direction:column  ">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+            </div>
+        </div>
+        <div>
+            <h3>Flex-direction:column-reverse </h3> 
+            <div class="flex-container" style="flex-direction:column-reverse ">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+            </div>
+        </div>
+    </section>
+    <h2>Flex-wrap</h2> 
+    <section>
+        <div>
+            <h3>Flex-wrap: nowrap (default) </h3> 
+            <div class="flex-container">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+                <div>BOX 4</div>
+                <div>BOX 5</div>
+                <div>BOX 6</div>
+            </div>
+        </div>
+        <div>
+            <h3>Flex-wrap: wrap </h3> 
+            <div class="flex-container" style="flex-wrap:wrap">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+                <div>BOX 4</div>
+                <div>BOX 5</div>
+                <div>BOX 6</div>
+            </section>
+        </div>
+    </section>
+    <h2>Flex-flow - combination of direction and wrap</h2> 
+    <section>
+        <div>
+            <h3>Flex-flow: row wrap</h3> 
+            <div class="flex-container" style="flex-flow: row wrap">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+                <div>BOX 4</div>
+                <div>BOX 5</div>
+                <div>BOX 6</div>
+            </div>
+        </div>
+    </section>
+    <h2>Justify-content (horizontal)</h2> 
+    <section>
+        <div>
+            <h3>Justify-content: flex-start (default) </h3> 
+            <div class="flex-container" style="justify-content: flex-start">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+            </div>
+        </div>
+        <div>
+            <h3>Justify-content: center </h3> 
+            <div class="flex-container" style="justify-content: center">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+            </div>
+        </div>
+        <div>
+            <h3>Justify-content: flex-end </h3> 
+            <div class="flex-container" style="justify-content: flex-end">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+            </div>
+        </div>
+        <div>
+            <h3>Justify-content: space-between </h3> 
+            <div class="flex-container" style="justify-content: space-between">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+            </div>
+        </div>
+        <div>
+            <h3>Justify-content: space-between </h3> 
+            <div class="flex-container" style="justify-content:space-around">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+            </div>
+        </div>
+    </section>
+    <h2>Align-items (vertical)</h2> 
+    <section>
+        <div>
+            <h3>Align-items: flex-start </h3> 
+            <div class="flex-container flex-height" style="align-items: flex-start;">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+                <div>BOX 4</div>
+                <div>BOX 5</div>
+            </div>
+        </div>
+        <div>
+            <h3>Align-items: center </h3> 
+            <div class="flex-container flex-height" style="align-items: center">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+                <div>BOX 4</div>
+                <div>BOX 5</div>
+            </div>
+        </div>
+        <div>
+            <h3>Align-items: flex-end </h3> 
+            <div class="flex-container flex-height" style="align-items: flex-end">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+                <div>BOX 4</div>
+                <div>BOX 5</div>
+            </div>
+        </div>
+    </section>
+
+    <h2>Align-content</h2> 
+    <section>
+        <div>
+            <h3>Align-content: flex-start </h3> 
+            <div class="flex-container flex-height" style="flex-flow: row wrap; align-content: flex-start;">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+                <div>BOX 4</div>
+                <div>BOX 5</div>
+            </div>
+        </div>
+        <div>
+            <h3>Align-content: center </h3> 
+            <div class="flex-container flex-height" style="flex-flow: row wrap; align-content: center">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+                <div>BOX 4</div>
+                <div>BOX 5</div>
+            </div>
+        </div>
+        <div>
+            <h3>Align-content: flex-end </h3> 
+            <div class="flex-container flex-height" style="flex-flow: row wrap; align-items: flex-end">
+                <div>BOX 1</div>
+                <div>BOX 2</div>
+                <div>BOX 3</div>
+                <div>BOX 4</div>
+                <div>BOX 5</div>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin-top:30px">
+        <div>
+            <h2>Order: int</h2>  
+            <div class="flex-container">
+                <div style="order:2">BOX 1</div>
+                <div style="order:3">BOX 2</div>
+                <div style="order:1">BOX 3</div>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin-top:30px">
+        <div>
+            <h2>Flex-grow: int</h2>  
+            <div class="flex-container">
+                <div style="flex-grow: 1">GROW 1</div>
+                <div style="flex-grow: 2">GROW 2</div>
+                <div style="flex-grow: 3">GROW 3</div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top:30px">
+        <div>
+            <h2>Flex-basis: %/px (flex compatible width) </h2> 
+            <div class="flex-container">
+                <div style="flex-basis: 40%">40% </div>
+                <div style="flex-basis: 25%">25%</div>
+                <div style="flex-basis: 70px">50px</div>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>
